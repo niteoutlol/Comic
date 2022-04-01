@@ -40,5 +40,8 @@ local teleportation = window:addPage("Teleportation", 5012544693)
 local teleport = teleportation:addSection("Teleport")
 
 teleport:addButton("tp", function()
-    repeat wait() hrpc = CFrame.new(hrcp =+ 1, 300, hrcp =+ 1) until hrcp == CFrame.new(20, 300, 70)
+    while not hrcp == CFrame.new(20, 300, 70) 
+        hrpc = CFrame.new(hrcp =+ 1, 300, hrcp =+ 1)
+        wait()
+    end
 end)
